@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/form.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;  
+}
+.form{
+    padding: 2.5rem;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    border: 0.1rem solid #d03737;
+    box-shadow: 0 0 0.5rem #d03737;
+    width: 30rem;
+    height: auto;
+    color: #fff;
+    font-family: 'roboto', sans-serif; 
+}
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-bottom: 2.3rem;
+}
+input, .submit-btn{
+    width: 88%;
+    height: 2.2rem;
+    display: block;
+    margin: 1.25rem;
+    border-radius: 5px;
+    background: rgba(6, 9, 38, 0.427);
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 0.9rem;
+}
+.submit-btn{
+    width: auto;
+    padding: 0 1.2rem;
+    cursor: grab;
+    margin: 1rem auto 0;
+    transition: 0.5s ease;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+}
+.submit-btn:hover, input:focus{
+    border: 0.1rem solid #d03737;
+    color: #d03737;
+    background-color: rgb(6, 9, 38);
+    box-shadow: 0 0 0.5rem rgba(210, 37, 37, 0.4);
+}
+input:focus{
+    color: #fff;
+}
+.submit-btn:active{
+    cursor: grabbing;
+}
+.link{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.84rem;
+    margin: 1.7rem;
+    transition: 0.5s;
+    opacity: 0;
+}
+.link:hover{
+    color: #d03737;
+}
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 9rem;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgba(6, 9, 38, 0.756);
+    border: 0.1rem solid #d03737;
+    box-shadow: 0 0 0.5rem #d03737;
+    border-radius: 5px;
+    transition: 1s;
+    opacity: 0;
+}
+.alert{
+    text-align: center;
+    color: #fff;
+}
+p{
+    text-align: center;
+    margin-top: 2rem;
+    color: #d03737;
+    text-shadow: 0 0.2rem 0.8rem #d03737;
+    font-size: 1.1rem;
+    opacity: 0;  
+    transition: 0.5s; 
+}
