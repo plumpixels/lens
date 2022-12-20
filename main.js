@@ -43,4 +43,5 @@ var swiper = new Swiper(".mySwiper", {
     closeNavBtn.style.display = 'none';
   }
   closeNavBtn.addEventListener('click', closeNav);
+
   
