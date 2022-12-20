@@ -519,13 +519,13 @@ footer{
     border-radius: 50%;
     background: rgb(208,55,55);
     color: #fff;
+    border-color: #fff;
     transition: 0.5s;
     position: relative;
     padding: 1.7rem;
 }
 .bmc:hover{
     box-shadow: 7px 3px 10px rgba(208,55,55,0.5);
-    border-color: #fff;
 }
 .coffee{
     display: flex;
